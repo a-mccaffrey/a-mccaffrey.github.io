@@ -1,7 +1,7 @@
 /* Importing fonts from Google */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
 
-/* Change the background and text colours for the navbar */
+/* Styling the navigation elements */
 .navbar-brand {
     padding: 20px;
     background-color: #D46A6A;
@@ -17,7 +17,7 @@
     background-color: #FFAAAA !important;
 }
 .navbar {
-    padding: 0px 0px 0px 20px;
+    padding: 0px 0px 0px 2em;
     border-bottom: 3px;
     border-style: solid;
     border-color: #550000;
@@ -27,4 +27,23 @@
     text-decoration: underline !important;
 }
 .nav-link {
-    font-family: 'Open Sans', sans-serif;}
+    font-family: 'Open Sans', sans-serif;
+}   
+.navbar-expand-lg .navbar-collapse {
+    position: absolute;
+    right: 0.5em;
+}
+
+/* Styling for the card with image and about me info */
+.card {
+    padding: 1em;
+    margin: 2em;
+}
+.card h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+#bio-image {
+    position: relative;
+    float: left;
+}
