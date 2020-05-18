@@ -14,7 +14,7 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 .bg-light {
-    background-color: #FFAAAA !important;
+    background-image: linear-gradient(-90deg, #3a5360, #FFAAAA);
 }
 .navbar {
     padding: 0px 0px 0px 2em;
@@ -22,9 +22,19 @@
     border-style: solid;
     border-color: #550000;
 }
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: #FFAAAA;
+}
 .active a {
-    color: #550000;
+    font-weight: 600;
     text-decoration: underline !important;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #ffffff;
 }
 .nav-link {
     font-family: 'Open Sans', sans-serif;
@@ -46,4 +56,17 @@
 #bio-image {
     position: relative;
     float: left;
+    border-radius: 47% 53% 70% 30% / 30% 30% 70% 70%;
+}
+.card-text {
+    margin: 0, 0, 20px, 0;
+    padding: 0;
+}
+
+/* Setting the background image from pexels.com */
+body {
+    background-image: url('https://images.pexels.com/photos/1054289/pexels-photo-1054289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
