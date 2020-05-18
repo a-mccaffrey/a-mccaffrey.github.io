@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-  <title>CSS Stylesheets with Relative Paths</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   	<!-- Linking CSS -->
-    <link href="reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+    <title>Aisling McCaffrey</title>
+
 </head>
+
 <body>
-    <header>
-        <h1>Student Bio</h1>
-          </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><h1>Aisling McCaffrey</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="./assets/slack profile pic.png" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
           <div class="container">
             <section id="main-bio">
               <h2><b>Aisling McCaffrey</b></h2>
-              <img src="slack profile pic.png" width="200px" height="200px" alt="Aisling McCaffrey" id="bio-image">
+              <img src="./assets/slack profile pic.png" width="200px" height="200px" alt="Aisling McCaffrey" id="bio-image">
               <p>I'm a 29 year old woman from Ottawa Ontario, but my family immigrated from Ireland 31 years ago, 
                 hence the extremely Irish name. I like cooking, graphic design, reddit, and shopping. I live with 
                 my sister and her family including my two nephews, David and Callum.</p>
