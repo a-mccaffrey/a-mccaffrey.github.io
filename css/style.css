@@ -4,23 +4,23 @@
 /* Styling the navigation elements */
 .navbar-brand {
     padding: 20px;
-    background-color: #D46A6A;
     overflow: visible;
     margin-right: 20px;
+    background-color: rgba(53, 88, 96, 0.7);
 }
-.navbar-brand h1 {
-    color: #ffffff;
-    font-size: 30px;
+.navbar-brand h1{
+    color:  #ffffff;
+    opacity: 1.0;
+    font-size: 25px;
     font-family: 'Nunito Sans', sans-serif;
 }
 .bg-light {
-    background-image: linear-gradient(-90deg, #3a5360, #FFAAAA);
+    background-image: linear-gradient(-120deg, #3a5360, #FFAAAA);
 }
 .navbar {
     padding: 0px 0px 0px 2em;
-    border-bottom: 3px;
-    border-style: solid;
-    border-color: #550000;
+    border-style: none;
+    opacity: 0.5;
 }
 .navbar-light .navbar-nav .nav-link {
     color: #ffffff;
@@ -48,19 +48,48 @@
 .card {
     padding: 1em;
     margin: 2em;
+    background-color: rgba(53, 88, 96, 0.4) !important;
+    border-style: none;
+    border-radius: 0;
 }
 .card h2 {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
+    color: #ffffff;
 }
 #bio-image {
     position: relative;
     float: left;
     border-radius: 47% 53% 70% 30% / 30% 30% 70% 70%;
+    max-width: 250px;
 }
 .card-text {
     margin: 0, 0, 20px, 0;
     padding: 0;
+    color: #ffffff;
+}
+.btn-primary {
+    background-color: #FFAAAA;
+    border-color: #ffffff;
+}
+.btn-primary:hover {
+    background-color: #3a5360;
+    border-color: #ffffff;
+}
+.btn-primary:focus {
+    background-color: #FFAAAA;
+    border-color: #3a5360;
+    border-width: 1px;
+    box-shadow: 0 0 0 0.2rem rgba(53,88,96, .25);
+}
+.btn-primary:active {
+    background-color: #ffaaaa;
+    border-color: #ffffff;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #3a5360;
+    background-color: #ffffff;
+    border-color: #ffaaaa;
 }
 
 /* Setting the background image from pexels.com */
