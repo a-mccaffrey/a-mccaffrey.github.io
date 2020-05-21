@@ -12,7 +12,7 @@
 }
 .navbar-brand h1{
     color:  #002eff;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Futura', sans-serif;
 }
 .bg-dark {
@@ -58,7 +58,7 @@
 .card {
     padding: 1em;
     margin: 2em;
-    background-color: transparent;
+    background-color: rgba(0, 46, 255, 0.7);
     border-color: #ffffff;
     border-style: solid;
     border-radius: 20px;
@@ -113,18 +113,9 @@ hr {
 }
 
 /* Setting the background image */
-@media only screen and (min-width: 900px) {
-    body {
-        background-image: url("../assets/background-image.png");
+body {
+        background-image: url("../assets/feather-background.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-    }
-    }
-@media only screen and (max-width: 900px) {
-    body {
-        background-image: url("../assets/background-image-mobile.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    } }
+ }
