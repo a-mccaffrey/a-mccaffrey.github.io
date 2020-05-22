@@ -10,6 +10,9 @@
     border-width: 2px;
     border-right: 
 }
+.navbar-dark .navbar-brand:hover {
+    background-color: rgba(0,46,255,0.2);
+}
 .navbar-brand h1{
     color:  #002eff;
     font-size: 16px;
@@ -23,7 +26,9 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffaaaa",endColorstr="#002eff",GradientType=1);}
 .navbar {
     padding: 0px 0px 0px 2em;
-    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
 }
 .navbar-dark .navbar-toggler {
     color: rgba(255,255,255);
@@ -61,6 +66,7 @@
     background-color: rgba(0, 46, 255, 0.7);
     border-color: #ffffff;
     border-style: solid;
+    border-width: 1px;
     border-radius: 20px;
       
 }
@@ -114,7 +120,7 @@ hr {
 
 /* Setting the background image */
 body {
-        background-image: url("../assets/feather-background.png");
+        background-image: url("../assets/background.png");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
