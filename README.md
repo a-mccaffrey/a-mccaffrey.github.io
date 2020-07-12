@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+# homework-2
+Responsive Portfolio
+The task was to create a responsive porfolio using bootstrap, HTML, CSS, our own personal information, and images. I tried to make the appearance look nice, too.
 
-You can use the [editor on GitHub](https://github.com/a-mccaffrey/a-mccaffrey.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+One ask was to make a sticky footer, which, when I did it, ended up cutting through my portfolio page as the content is greater in height than the browser. So I decided to change it to a footer that stays at the bottom of the screen no matter what's on the page. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I tried, for the most part, to stick to the design example we were given. The only time I strayed was in the navigation bar which I kept as bootstrap designed it with Javascript in mobile so that it looks elegant as it unfolds.
 
-### Markdown
+I used semantic HTML wherever I could but obviously a lot of bootstrap just uses divs along with their own classification system for the styling. There was no specified "header" area so I couldn't use that, for instance, but I did use "main".
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Putting the words on top of the images in the portfolio section was pretty tricky but I'm happy with how it turned out.
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/a-mccaffrey/a-mccaffrey.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Hope you like it!
