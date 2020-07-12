@@ -2,87 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap");
 
 /* Setting the base font for any and all elements I choose to use (I may substitute futura for special cases) */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+body {
   font-family: "Nunito Sans", sans-serif;
   color: white;
 }
@@ -93,7 +13,14 @@ a,
 u:hover {
   color: #cd94bb;
 }
-
+a {
+  color: #ffaaaa
+}
+/*Styling for the Audio name help*/
+#audio {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
 /* Setting the background image */
 body {
   background-image: url("../assets/background.png");
@@ -304,11 +231,34 @@ label {
 
 /* Styling the footer */
 
-#myfooter {
-  margin-top: auto;
-  height: 60px;
-  background-color: white;
+footer {
+  height: auto;
   text-align: center;
-  padding-top: 20px;
-  color: #ffaaaa;
+  border-style: solid;
+  border-color: white;
+  border-top-width: 1px;
+  padding: 20px;
+}
+.bg-footer {
+  background: rgb(70, 81, 235);
+  background: -moz-linear-gradient(
+    23deg,
+    rgba(70, 81, 235, 1) 0%,
+    rgba(255, 170, 170, 1) 76%
+  );
+  background: -webkit-linear-gradient(
+    23deg,
+    rgba(70, 81, 235, 1) 0%,
+    rgba(255, 170, 170, 1) 76%
+  );
+  background: linear-gradient(
+    23deg,
+    rgba(70, 81, 235, 1) 0%,
+    rgba(255, 170, 170, 1) 76%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4651eb",endColorstr="#ffaaaa",GradientType=1);
+}
+/* Styling the portfolio page */
+.github {
+  text-align: center;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" class="has-sticky-footer">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -45,8 +45,11 @@
     <title>Home | Responsive Portfolio</title>
   </head>
 
+  <!-- Audio for my name pronunciation -->
+  <audio id="player" src="assets/Aisling McCaffrey Name Audio.mp3"></audio>
+
   <!-- This is the navbar -->
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="./index.html">
         <h1><i class="fas fa-feather-alt"></i> AISLING MCCAFFREY</h1>
@@ -81,52 +84,81 @@
     </nav>
 
     <!-- About me card -->
-    <main class="container no-gutters">
+    <main class="container-fluid no-gutters">
       <div class="row">
-        <div class="col-xs-12 col-sm-10">
+        <div class="col-12">
           <div class="card">
             <div class="card-body">
-              <h2 class="card-title">About Me</h2>
+              <h2 class="card-title">
+                About Aisling McCaffrey
+                <a onclick="document.getElementById('player').play()" href="#"
+                  ><i class="fa fa-volume-up"></i
+                ></a>
+                <a href="https://babynames.com/name/Aisling" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
+                  ><i class="fas fa-deaf"></i
+                ></a>
+              </h2>
               <hr />
               <img
                 src="./assets/slack-profile-pic.png"
-                alt="Aisling McCaffrey"
+                alt="Aisling McCaffrey's profile picture"
                 id="bio-image"
                 class="p-3 img-fluid"
               />
               <p class="card-text">
-                I'm a 29 year old woman from Ottawa Ontario, but my family
-                immigrated from Ireland 31 years ago, hence the extremely Irish
-                name. I like cooking, graphic design, reddit, and shopping. I
-                live with my sister and her family including my two nephews,
-                David and Callum.
+                I am an EU-Canadian citizen and front-end developer who is
+                permanently relocating to Luxembourg and I'm currently seeking
+                employment as a junior developer at a client-focused agency. I
+                have an honours-level Bachelor's Degree in International
+                Business from Carleton University, and will soon complete a
+                full-stack web development certificate from the same
+                institution.
               </p>
               <p class="card-text">
-                I like to travel the world, which is part of the reason I'm
-                learning coding. I lived in Shanghai for 3 years, and I also
-                spent a year in Beijing. I'd like to move to Luxembourg with my
-                partner (who is from there) and I think coding will be a good
-                way for me to be able to work and earn a living in a place where
-                I don't speak the local language. Even if we move somewhere
-                else, I think coding will allow me to do work that I find very
-                meaningful.
+                Professionally, I have 4+ years of B2B marketing experience in
+                multiple countries. I have worked on web development projects
+                with remote and on-site teams contributing to the UX and
+                front-end development that resulted in tangible business
+                outcomes, and am known for creative problem solving by my team
+                members. I have worked with leading marketing and sales
+                platforms including Hubspot and Salesforce and I would like to
+                apply my perspective to delivering value for my future clients.
+                I played a leadership role in the rebranding of a top 100 tech
+                company in Canada and over my career, I have successfully
+                managed projects for campaigns, branding, website development,
+                integration of marketing tools, marketing analytics, and social
+                media advertising.
               </p>
               <p class="card-text">
                 If you want to learn more about my education and background, you
                 can check out my LinkedIn profile, which is right here:
-                <a href="https://www.linkedin.com/in/aisling-s-mccaffrey/"
+                <a href="https://www.linkedin.com/in/aisling-s-mccaffrey/" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
                   ><i class="fab fa-linkedin"></i> <u>Aisling's LinkedIn</u></a
                 >
               </p>
-              <a href="./contact.html" class="btn btn-primary">Get in Touch</a>
+              <p class="card-text">
+                If you want to take a peek inside my GitHub account to see what
+                I've been up to, you can find it by clicking here:
+                <a href="https://github.com/a-mccaffrey" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
+                  ><i class="fab fa-github"></i> <u>Aisling's GitHub account</u></a
+                >
+              </p>
+              <p class="card-text">
+                You can also grab a PDF of my CV from Google Drive by clicking
+                here:
+                <a href="https://www.linkedin.com/in/aisling-s-mccaffrey/" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
+                  ><i class="fas fa-file"></i> <u>Aisling's CV</u></a
+                >
+              </p>
+              <a href="./contact.html" aria-label="This is an interal link (opens in the same tab)" class="btn btn-primary">Get in Touch</a>
             </div>
           </div>
         </div>
       </div>
     </main>
     <!-- Footer -->
-    <footer id="myfooter">
-      My footer
+    <footer class="mt-auto bg-footer">
+      Hello! I am a footer.
     </footer>
   </body>
 </html>
