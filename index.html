@@ -92,10 +92,10 @@
               <h2 class="card-title">
                 About Aisling McCaffrey
                 <a onclick="document.getElementById('player').play()" href="#"
-                  ><i class="fa fa-volume-up"></i
+                  ><i class="fa fa-volume-up" data-tooltip title="Click to hear name pronunciation"></i
                 ></a>
                 <a href="https://babynames.com/name/Aisling" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
-                  ><i class="fas fa-deaf"></i
+                  ><i class="fas fa-deaf" data-tooltip title="Click to read name pronunciation"></i
                 ></a>
               </h2>
               <hr />
@@ -146,7 +146,7 @@
               <p class="card-text">
                 You can also grab a PDF of my CV from Google Drive by clicking
                 here:
-                <a href="https://www.linkedin.com/in/aisling-s-mccaffrey/" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
+                <a href="https://drive.google.com/file/d/1Y3iBxRn_7-Vg-lAN706toU_im0QId3Q5/view?usp=sharing" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
                   ><i class="fas fa-file"></i> <u>Aisling's CV</u></a
                 >
               </p>
@@ -160,5 +160,11 @@
     <footer class="mt-auto bg-footer">
       Hello! I am a footer.
     </footer>
+
+    <script>
+      $(function() {
+        $(`[data-tooltip]`).tooltip();
+      });
+    </script>
   </body>
 </html>
