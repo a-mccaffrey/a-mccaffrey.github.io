@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en-us" class="has-sticky-footer">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Linking styles and scripts and other stuff -->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2.0/dist/flickity.min.css"
+    />
+    <link href="./css/style3.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fontawesome kit -->
+    <script
+      src="https://kit.fontawesome.com/ca69db4abe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tooltip Script -->
+    <script>
+      $(function () {
+        $(`[data-tooltip]`).tooltip();
+      });
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+    <title>Aisling McCaffrey's Portfolio</title>
+    <!-- Audio for my name pronunciation -->
+  </head>
+  <body>
+    <audio id="player" src="/assets/Aisling_McCaffrey_Name_Audio.mp3"></audio>
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <h5>
+            <img
+              src="./assets/flower-icon.svg"
+              alt="A small flower design by Aisling McCaffrey"
+              class="logo"
+            />
+            Aisling McCaffrey
+          </h5>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me">Get in Touch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Main content starts -->
+    <header class="hero">
+      <div class="hero-text">
+        <h1 class="display-4 text-center">Hello, Moien!</h1>
+        <p class="lead text-center">
+          My name is Aisling McCaffrey
+          <a onclick="document.getElementById('player').play()" href="#"
+            ><i
+              class="fa fa-volume-up"
+              data-tooltip
+              title="Click to hear name pronunciation"
+            ></i
+          ></a>
+          <a
+            href="https://babynames.com/name/Aisling"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="This is an external link (opens in a new tab)"
+            ><i
+              class="fas fa-deaf"
+              data-tooltip
+              title="Click to read name pronunciation"
+            ></i
+          ></a>
+        </p>
+        <p class="lead text-center">Welcome to my portfolio!</p>
+        <p class="text-center">
+          <a class="mybuttons" href="#about-me" role="button">About Me</a>
+          <a class="mybuttons" href="#portfolio" role="button">Portfolio</a>
+          <a class="mybuttons" href="#contact-me" role="button">Get in Touch</a>
+        </p>
+      </div>
+    </header>
+
+    <a name="about-me"></a>
+
+</div>
+    <div class="content">
+      <div id="subcontent">
+      <!-- About Me -->
+      <main id="about-me" class="container">
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img
+                src="./assets/ProfilePicture copy.png"
+                alt="This is a picture of me combined with some of the same types of watercolour flowers that were used in the hero image to create a beautiful portrait. This photo is basically to demonstrate that I can look like a professional when I need to - but while I code this, I promise you, I am wearing sweatpants."
+                id="bio-image"
+                class="mx-auto card-img"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h2 class="card-title">About Me</h2>
+                <p class="card-text">
+                  I am an EU-Canadian citizen and front-end developer who is
+                  permanently relocating to Luxembourg and I'm currently seeking
+                  employment on the client-side or at an agency where I can
+                  apply my experience with graphic design, video editing, web
+                  design, and coding. I have an honours-level Bachelor's Degree
+                  in International Business from Carleton University, and will
+                  soon complete a full-stack web development certificate from
+                  the same institution.
+                </p>
+                <p class="card-text">
+                  Professionally, I have 4+ years of B2B marketing experience in
+                  multiple countries. I have worked on web development projects
+                  with remote and on-site teams contributing to the UX and
+                  front-end development that resulted in tangible business
+                  outcomes, and am known for creative problem solving by my team
+                  members. In my career, I have been responsible for graphic
+                  design as a major or minor part of my role for 4+ years with
+                  Illustrator and Photoshop, and I have worked on video editing
+                  and animation for both my full-time role and freelance using
+                  Premiere Pro and Open Shot. I have worked with leading
+                  marketing and sales platforms including Hubspot and Salesforce
+                  and I would like to apply my perspective to delivering value
+                  for my future clients. I played a leadership role in the
+                  rebranding of a top 100 tech company in Canada and over my
+                  career, I have successfully managed projects for campaigns,
+                  branding, website development, integration of marketing tools,
+                  marketing analytics, and social media advertising.
+                </p>
+                <p class="card-text">
+                  If you want to learn more about my education and background,
+                  you can check out my LinkedIn profile, which is right here:
+                  <a
+                    href="https://www.linkedin.com/in/aisling-s-mccaffrey/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)"
+                    class="body-link"
+                    ><i class="fab fa-linkedin"></i> Aisling's LinkedIn</a
+                  >
+                </p>
+                <p class="card-text">
+                  If you want to take a peek inside my GitHub account to see
+                  what I've been up to, you can find it by clicking here:
+                  <a
+                    href="https://github.com/a-mccaffrey"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)"
+                    class="body-link"
+                    ><i class="fab fa-github"></i> Aisling's GitHub account</a
+                  >
+                </p>
+                <p class="card-text">
+                  You can also grab a PDF of my CV from Google Drive by clicking
+                  here:
+                  <a
+                    href="https://drive.google.com/file/d/1Y3iBxRn_7-Vg-lAN706toU_im0QId3Q5/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)"
+                    class="body-link"
+                    ><i class="fas fa-file"></i> Aisling's CV</a
+                  >
+                </p>
+                <a
+                  href="./contact.html"
+                  aria-label="This is an interal link (opens in the same tab)"
+                  class="mybuttons m-0"
+                  >Check out my portfolio</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <a name="portfolio"></a>
+
+      <section id="portfolio">
+        <div class="container">
+          <div class="carousel-wrapper">
+            <h2 class="portfolio-h2">Portfolio</h2>
+            <div class="carousel" data-flickity>
+              <div class="carousel-cell">
+                <h3>Full Stack Web Development</h3>
+                <a class="more" href="www.google.ca">Check it out</a>
+                <img src="./assets/portfolio-coding copy.png" class="carousel-image" />
+                <div class="line"></div>
+                <div class="description">
+                  <span>Projects to show a variety of skills</span>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <h3>Professional Writing Examples</h3>
+                <a class="more" href="www.google.ca">Check it out</a>
+                <img src="./assets/portfolio-writing copy.png" class="carousel-image" />
+                <div class="line"></div>
+                <div class="description">
+                  <span>Weather Application</span>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <h3>Sample Graphic Design Work</h3>
+                <a class="more" href="">Check it out</a>
+                <img
+                  src="./assets/portfolio-graphic-design.png"
+                  class="carousel-image"
+                />
+                <div class="line"></div>
+                <div class="description">
+                  <span>For work, fun, and by commission</span>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <h3>Video Editing and Animation Work</h3>
+                <a class="more my-modals" data-toggle="modal"
+                data-target="#videoAnimationModal">Check it out</a>
+                <img
+                  src="./assets/portfolio-animation.gif"
+                  class="carousel-image"
+                />
+                <div class="line"></div>
+                <div class="description">
+                  <span>Freelance and corporate</span>
+                </div>
+              </div>
+            </div>
+            <div id="portfolio-contact"><a class="mybuttons mx-auto" href="#about-me" role="button">Get in Touch</a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form Starts -->
+      <a name="contact-me"></a>
+      <section id="contact-me">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 help-container text-center">
+              <h2>How can I help you?</h2>
+              <h4>
+                I'm happy to help you on a contract, freelance, and full-time
+                basis in the following areas:
+              </h4>
+              <div class="row">
+                <div class="col-4 icon-container">
+                  <img
+                    src="./assets/development-icon.svg"
+                    alt=""
+                    class="my-icons"
+                    style="width: 75px;"
+                  />
+                  <p>Front-End Web Development</p>
+                </div>
+                <div class="col-4 icon-container">
+                  <img src="./assets/ux-icon.svg" alt="" style="width: 75px;"                     class="my-icons"
+                  />
+                  <p>UX Design</p>
+                </div>
+                <div class="col-4 icon-container">
+                  <img
+                    src="./assets/graphic-design-icon.svg"
+                    alt=""
+                    style="width: 75px;"
+                    class="my-icons"
+                    />
+                  <p>Graphic Design</p>
+                </div>
+                <div class="col-4 icon-container">
+                  <img
+                    src="./assets/video-editing-icon.svg"
+                    alt=""
+                    style="width: 75px;"
+                    class="my-icons"
+                  />
+                  <p>Video Editing and Animation</p>
+                </div>
+                <div class="col-4 icon-container">
+                  <img
+                    src="./assets/writing-icon.svg"
+                    alt=""
+                    style="width: 75px;"
+                    class="my-icons"
+                  />
+                  <p>Writing</p>
+                </div>
+                <div class="col-4 icon-container">
+                  <img
+                    src="./assets/consulting-icon.svg"
+                    alt=""
+                    style="width: 75px;"
+                    class="my-icons"
+                    />
+                  <p>Consulting</p>
+                </div>
+                <div class="col-12">
+                  <p>Don't see something on the list, but want to check if I might be interested? I'm always down for a new experience. Before my more business-focused work, I earned my wages in a small family-owned restaurant, English tutoring, a vintage clothing store, and as an au pair. I am happy to mentor, to offer pro-bono work for charity, and to make new friends. Please feel free to get in touch.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-container">
+                <form
+                  action="https://formspree.io/mgenroaz"
+                  method="POST"
+                  class="mt-n5"
+                >
+                  <div class="form-group row">
+                    <div class="col">
+                      <label for="contact-name" class="col-form-label"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="contact-name"
+                        placeholder="Name"
+                        name="name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col">
+                      <label for="contact-email" class="col-form-label"
+                        >Email</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="contact-email"
+                        placeholder="Email"
+                        name="_replyto"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col">
+                      <label for="contact-message">Message</label>
+                      <textarea
+                        class="form-control"
+                        id="contact-message"
+                        rows="4"
+                        placeholder="Do you have anything special you want to say to me? Do you want to hire me? I would want to hire me, so I don't blame you."
+                        name="message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="mybuttons m-0">Submit</button>
+                  <hr />
+                  <h5 class="contact-form">Further information (if you're feeling nosey)</h5>
+                  <p class="contact-form"><i class="fas fa-envelope-open-text"></i> <strong>For those who prefer email |</strong> <a href = "mailto: aisling.s.mccaffrey@gmail.com"> aisling.s.mccaffrey@gmail.com</a></p>
+                  <p class="contact-form"><i class="fas fa-map-marker-alt"></i> <strong>Where I'd really like to work |</strong> Remotely or in Luxembourg City</p>
+                  <p class="contact-form"><i class="fas fa-phone"></i> <strong>If you'd like to give me a call |</strong> Fill out the form or email me first!</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Form ends -->
+
+      <!-- Footer starts -->
+      <footer class="mt-auto bg-footer">
+        <div class="container footer-container">
+          <hr>
+          <h5>"If you work really hard and you're kind, amazing things will happen"</h5>
+          <a href="https://www.facebook.com/aislingsmccaffrey"><i class="fab fa-facebook-square social-media facebook" id="facebook"></i></a>
+            <a href="https://www.linkedin.com/in/aisling-s-mccaffrey/"><i class="fab fa-linkedin social-media" id="linkedin"></i></a>
+            <a href="https://github.com/a-mccaffrey"><i class="fab fa-github-square social-media" id="github"></i></a>
+            <a href="https://www.instagram.com/a_mccaffrey/"><i class="fab fa-instagram-square social-media" id="instagram"></i></a>            
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Aisling McCaffrey All Rights Reserved
+          </p>
+        </div>
+      </footer>
+      <!-- Footer Ends -->
+
+      <!-- Modals -->
+      <!-- Video Animation Modal -->
+      <div
+        class="modal fade"
+        id="videoAnimationModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Video Editing and Animation Work</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              ...
+            </div>
+            <div class="modal-footer text-center">
+              <button
+                type="button"
+                class="btn btn-secondary mybuttons"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
