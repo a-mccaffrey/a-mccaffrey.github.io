@@ -8,22 +8,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Linking CSS and other stuff -->
-    <link href="./css/reset.css" rel="stylesheet" type="text/css" />
-    <!-- CSS only -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link href="./css/style.css" rel="stylesheet" type="text/css" />
-
-    <!-- Fontawesome kit -->
-    <script
-      src="https://kit.fontawesome.com/ca69db4abe.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Linking styles and scripts and other stuff -->
 
     <!-- JS, Popper.js, and jQuery -->
     <script
@@ -41,130 +26,585 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 
-    <title>Home | Responsive Portfolio</title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2.0/dist/flickity.min.css"
+    />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fontawesome kit -->
+    <script
+      src="https://kit.fontawesome.com/ca69db4abe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tooltip Script -->
+    <script>
+      $(function () {
+        $(`[data-tooltip]`).tooltip();
+      });
+    </script>
+
+    <title>Aisling McCaffrey's Portfolio</title>
+    <!-- Audio for my name pronunciation -->
   </head>
-
-  <!-- Audio for my name pronunciation -->
-  <audio id="player" src="/assets/Aisling McCaffrey Name Audio.mp3"></audio>
-
-  <!-- This is the navbar -->
-  <body class="d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="./index.html">
-        <h1><i class="fas fa-feather-alt"></i> AISLING MCCAFFREY</h1>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto flex-nowrap">
-          <li class="nav-item active">
-            <a class="nav-link disabled" href="#"
-              >About <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Get in Touch</a>
-          </li>
-        </ul>
+  <body>
+    <audio id="player" src="/assets/Aisling_McCaffrey_Name_Audio.mp3"></audio>
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <h5>
+            <img
+              src="./assets/flower-icon.svg"
+              alt="A small flower design by Aisling McCaffrey"
+              class="logo"
+            />
+            Aisling McCaffrey
+          </h5>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto flex-nowrap">
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me">Get in Touch</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
+    <!-- Navbar ends -->
 
-    <!-- About me card -->
-    <main class="container-fluid no-gutters">
-      <div class="row">
-        <div class="col-12">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title">
-                About Aisling McCaffrey
-                <a onclick="document.getElementById('player').play()" href="#"
-                  ><i class="fa fa-volume-up" data-tooltip title="Click to hear name pronunciation"></i
-                ></a>
-                <a href="https://babynames.com/name/Aisling" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
-                  ><i class="fas fa-deaf" data-tooltip title="Click to read name pronunciation"></i
-                ></a>
-              </h2>
-              <hr />
+    <!-- Main content starts -->
+    <header class="hero">
+      <div class="hero-text">
+        <h1 class="display-4 text-center">Hello, Moien!</h1>
+        <p class="lead text-center">
+          My name is Aisling McCaffrey
+          <a onclick="document.getElementById('player').play()" href="#"
+            ><i
+              class="fa fa-volume-up"
+              data-tooltip
+              title="Click to hear name pronunciation"
+            ></i
+          ></a>
+          <a
+            href="https://babynames.com/name/Aisling"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="This is an external link (opens in a new tab)"
+            ><i
+              class="fas fa-deaf"
+              data-tooltip
+              title="Click to read name pronunciation and learn a little about its origins"
+            ></i
+          ></a>
+        </p>
+        <p class="lead text-center">Welcome to my portfolio!</p>
+        <p class="text-center">
+          <a class="mybuttons" href="#about-me" role="button">About Me</a>
+          <a class="mybuttons" href="#portfolio" role="button">Portfolio</a>
+          <a class="mybuttons" href="#contact-me" role="button">Get in Touch</a>
+        </p>
+      </div>
+    </header>
+
+<div class="anchor">
+    <a id="about-me"></a>
+</div>
+    <div class="content">
+      <div id="subcontent">
+      <!-- About Me -->
+      <main id="about-me-content" class="container">
+        <div class="card">
+          <div class="row no-gutters">
+            <div class="col-md-4">
               <img
-                src="./assets/slack-profile-pic.png"
-                alt="Aisling McCaffrey's profile picture"
+                src="./assets/ProfilePicture copy.png"
+                alt="This is a picture of me combined with some of the same types of watercolour flowers that were used in the hero image to create a beautiful portrait. This photo is basically to demonstrate that I can look like a professional when I need to - but while I code this, I promise you, I am wearing sweatpants."
                 id="bio-image"
-                class="p-3 img-fluid"
+                class="mx-auto card-img"
               />
-              <p class="card-text">
-                I am an EU-Canadian citizen and front-end developer who is
-                permanently relocating to Luxembourg and I'm currently seeking
-                employment as a junior developer at a client-focused agency. I
-                have an honours-level Bachelor's Degree in International
-                Business from Carleton University, and will soon complete a
-                full-stack web development certificate from the same
-                institution.
-              </p>
-              <p class="card-text">
-                Professionally, I have 4+ years of B2B marketing experience in
-                multiple countries. I have worked on web development projects
-                with remote and on-site teams contributing to the UX and
-                front-end development that resulted in tangible business
-                outcomes, and am known for creative problem solving by my team
-                members. I have worked with leading marketing and sales
-                platforms including Hubspot and Salesforce and I would like to
-                apply my perspective to delivering value for my future clients.
-                I played a leadership role in the rebranding of a top 100 tech
-                company in Canada and over my career, I have successfully
-                managed projects for campaigns, branding, website development,
-                integration of marketing tools, marketing analytics, and social
-                media advertising.
-              </p>
-              <p class="card-text">
-                If you want to learn more about my education and background, you
-                can check out my LinkedIn profile, which is right here:
-                <a href="https://www.linkedin.com/in/aisling-s-mccaffrey/" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
-                  ><i class="fab fa-linkedin"></i> <u>Aisling's LinkedIn</u></a
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h2 class="card-title">About Me</h2>
+                <p class="card-text">
+                  I am an EU-Canadian citizen and front-end developer who is
+                  permanently relocating to Luxembourg and I'm currently seeking
+                  employment on the client-side or at an agency where I can
+                  apply my experience with graphic design, video editing, web
+                  design, and coding. I have an honours-level Bachelor's Degree
+                  in International Business from Carleton University, and will
+                  soon complete a full-stack web development certificate from
+                  the same institution.
+                </p>
+                <p class="card-text">
+                  Professionally, I have 4+ years of B2B marketing experience in
+                  multiple countries. I have worked on web development projects
+                  with remote and on-site teams contributing to the UX and
+                  front-end development that resulted in tangible business
+                  outcomes, and am known for creative problem solving by my team
+                  members. In my career, I have been responsible for graphic
+                  design as a major or minor part of my role for 4+ years with
+                  Illustrator and Photoshop, and I have worked on video editing
+                  and animation for both my full-time role and freelance using
+                  Premiere Pro and Open Shot. I have worked with leading
+                  marketing and sales platforms including Hubspot and Salesforce
+                  and I would like to apply my perspective to delivering value
+                  for my future clients. I played a leadership role in the
+                  rebranding of a top 100 tech company in Canada and over my
+                  career, I have successfully managed projects for campaigns,
+                  branding, website development, integration of marketing tools,
+                  marketing analytics, and social media advertising.
+                </p>
+                <p class="card-text">
+                  If you want to learn more about my education and background,
+                  you can check out my LinkedIn profile, which is right here:
+                  <a
+                    href="https://www.linkedin.com/in/aisling-s-mccaffrey/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)"
+                    class="body-link"
+                    ><i class="fab fa-linkedin"></i> Aisling's LinkedIn</a
+                  >
+                </p>
+                <p class="card-text">
+                  If you want to take a peek inside my GitHub account to see
+                  what I've been up to, you can find it by clicking here:
+                  <a
+                    href="https://github.com/a-mccaffrey"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)"
+                    class="body-link"
+                    ><i class="fab fa-github"></i> Aisling's GitHub account</a
+                  >
+                </p>
+                <p class="card-text">
+                  You can also grab a PDF of my CV from Google Drive by clicking
+                  here:
+                  <a
+                    href="https://drive.google.com/file/d/1Y3iBxRn_7-Vg-lAN706toU_im0QId3Q5/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="This is an external link (opens in a new tab)"
+                    class="body-link"
+                    ><i class="fas fa-file"></i> Aisling's CV</a
+                  >
+                </p>
+                <a
+                  href="#portfolio"
+                  aria-label="This is an interal link (opens in the same tab)"
+                  class="mybuttons m-0"
+                  >Check out my portfolio</a
                 >
-              </p>
-              <p class="card-text">
-                If you want to take a peek inside my GitHub account to see what
-                I've been up to, you can find it by clicking here:
-                <a href="https://github.com/a-mccaffrey" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
-                  ><i class="fab fa-github"></i> <u>Aisling's GitHub account</u></a
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <a id="portfolio"></a>
+
+      <section id="portfolio-section">
+        <div class="container">
+          <div class="carousel-wrapper">
+            <h2 class="portfolio-h2">Portfolio</h2>
+            <div class="carousel" data-flickity>
+              <div class="carousel-cell">
+                <h3>Full Stack Web Development</h3>
+                <a class="more my-modals" data-toggle= "modal" data-target="#fullStackModal">Check it out</a>
+                <img src="./assets/portfolio-coding copy.png" class="carousel-image" />
+                <div class="line"></div>
+                <div class="description">
+                  <span>Projects to show a variety of skills</span>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <h3>Professional Writing Examples</h3>
+                <a class="more" href="www.google.ca">Check it out</a>
+                <img src="./assets/portfolio-writing copy.png" class="carousel-image" />
+                <div class="line"></div>
+                <div class="description">
+                  <span>Weather Application</span>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <h3>Sample Graphic Design Work</h3>
+                <a class="more" href="">Check it out</a>
+                <img
+                  src="./assets/portfolio-graphic-design.png"
+                  class="carousel-image"
+                />
+                <div class="line"></div>
+                <div class="description">
+                  <span>For work, fun, and by commission</span>
+                </div>
+              </div>
+              <div class="carousel-cell">
+                <h3>Video Editing and Animation Work</h3>
+                <a class="more my-modals" data-toggle="modal"
+                data-target="#videoAnimationModal">Check it out</a>
+                <img
+                  src="./assets/portfolio-animation.gif"
+                  class="carousel-image"
+                />
+                <div class="line"></div>
+                <div class="description">
+                  <span>Freelance and corporate</span>
+                </div>
+              </div>
+            </div>
+            <div id="portfolio-contact"><a class="mybuttons mx-auto" href="#contact-me" role="button">Get in Touch</a></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Form Starts -->
+      <a id="contact-me"></a>
+      <section id="contact-me">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 help-container text-center">
+              <h2>How can I help you?</h2>
+              <h4>
+                I'm happy to help you on a contract, freelance, and full-time
+                basis in the following areas:
+              </h4>
+              <div class="row">
+                <div class="col-4 icon-container">
+                  <img
+                    src="./assets/development-icon.svg"
+                    alt=""
+                    class="my-icons"
+                    style="width: 75px;"
+                  />
+                  <p>Front-End Web Development</p>
+                </div>
+                <div class="col-4 icon-container">
+                  <img src="./assets/ux-icon.svg" alt="" style="width: 75px;"                     class="my-icons"
+                  />
+                  <p>UX Design</p>
+                </div>
+                <div class="col-4 icon-container">
+                  <img
+                    src="./assets/graphic-design-icon.svg"
+                    alt=""
+                    style="width: 75px;"
+                    class="my-icons"
+                    />
+                  <p>Graphic Design</p>
+                </div>
+                <div class="col-4 icon-container">
+                  <img
+                    src="./assets/video-editing-icon.svg"
+                    alt=""
+                    style="width: 75px;"
+                    class="my-icons"
+                  />
+                  <p>Video Editing and Animation</p>
+                </div>
+                <div class="col-4 icon-container">
+                  <img
+                    src="./assets/writing-icon.svg"
+                    alt=""
+                    style="width: 75px;"
+                    class="my-icons"
+                  />
+                  <p>Writing</p>
+                </div>
+                <div class="col-4 icon-container">
+                  <img
+                    src="./assets/consulting-icon.svg"
+                    alt=""
+                    style="width: 75px;"
+                    class="my-icons"
+                    />
+                  <p>Consulting</p>
+                </div>
+                <div class="col-12 mt-3">
+                  <p>Don't see something on the list, but want to check if I might be interested? I'm always down for a new experience. Before my more business-focused work, I earned my wages in a small family-owned restaurant, English tutoring, a vintage clothing store, and as an au pair. I am happy to mentor, to offer pro-bono work for charity, and to make new friends. Please feel free to get in touch.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="contact-container">
+                <form
+                  action="https://formspree.io/mgenroaz"
+                  method="POST"
+                  class="mt-n5"
                 >
-              </p>
-              <p class="card-text">
-                You can also grab a PDF of my CV from Google Drive by clicking
-                here:
-                <a href="https://drive.google.com/file/d/1Y3iBxRn_7-Vg-lAN706toU_im0QId3Q5/view?usp=sharing" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"
-                  ><i class="fas fa-file"></i> <u>Aisling's CV</u></a
-                >
-              </p>
-              <a href="./contact.html" aria-label="This is an interal link (opens in the same tab)" class="btn btn-primary">Get in Touch</a>
+                  <div class="form-group row">
+                    <div class="col">
+                      <label for="contact-name" class="col-form-label"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="contact-name"
+                        placeholder="Name"
+                        name="name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col">
+                      <label for="contact-email" class="col-form-label"
+                        >Email</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="contact-email"
+                        placeholder="Email"
+                        name="_replyto"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col">
+                      <label for="contact-message">Message</label>
+                      <textarea
+                        class="form-control"
+                        id="contact-message"
+                        rows="4"
+                        placeholder="Do you have anything special you want to say to me? Do you want to hire me? I would want to hire me, so I don't blame you."
+                        name="message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="mybuttons m-0">Submit</button>
+                  <hr />
+                  <h5 class="contact-form">Further information (if you're feeling nosey)</h5>
+                  <p class="contact-form"><i class="fas fa-envelope-open-text"></i> <strong>For those who prefer email |</strong> <a href = "mailto: aisling.s.mccaffrey@gmail.com"> Click Here</a></p>
+                  <p class="contact-form"><i class="fas fa-map-marker-alt"></i> <strong>Where I'd really like to work |</strong> Remotely or in Luxembourg City</p>
+                  <p class="contact-form"><i class="fas fa-phone"></i> <strong>If you'd like to give me a call |</strong> Fill out the form or email me first!</p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Form ends -->
+
+      <!-- Footer starts -->
+      <footer class="mt-auto bg-footer">
+        <div class="container footer-container">
+          <hr>
+          <h5>"If you work really hard and you're kind, amazing things will happen"</h5>
+          <a href="https://www.facebook.com/aislingsmccaffrey" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"><i class="fab fa-facebook-square social-media facebook" id="facebook"></i></a>
+            <a href="https://www.linkedin.com/in/aisling-s-mccaffrey/" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"><i class="fab fa-linkedin social-media" id="linkedin"></i></a>
+            <a href="https://github.com/a-mccaffrey" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"><i class="fab fa-github-square social-media" id="github"></i></a>
+            <a href="https://www.instagram.com/a_mccaffrey/" target="_blank" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)"><i class="fab fa-instagram-square social-media" id="instagram"></i></a>            
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Aisling McCaffrey All Rights Reserved
+          </p>
+        </div>
+      </footer>
+      <!-- Footer Ends -->
+
+      <!-- Modals -->
+
+      <!-- Full Stack Web Development Modal -->
+      <div
+        class="modal fade"
+        id="fullStackModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Full Stack Web Development Examples</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <h3 class="m-5">My entire portfolio was coded and designed from scratch using GitHub, Bootstrap, HTML, CSS, JavaScript, Illustrator, and Photoshop. I hope you enjoy it.</h3>
+              <h4>WordPress</h4>
+              <a href="https://pivotree.com/platforms/coveo-for-commerce/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Coveo for Commerce Webpage</a>
+              <a href="https://pivotree.com/our-clients/tgi-fridays-sap-commerce-marketing-and-customer-data/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Case Study Page</a>
+              <a href="https://pivotree.com/social-distancing-commerce-enablement-solutions/buy-online-pickup-in-store-bopis-with-curbside-pickup-by-pivotree/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Buy Online Pickup in Store Solution Page</a>
+              <a href="https://pivotree.com/about-us/newsroom/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Newsroom</a>
+              <hr/>
+              <h4>JSON</h4>
+            <a href="https://boiling-tundra-84919.herokuapp.com/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Note Taker Using Express.js</a>
+            <hr/>
+            <h4>Using APIs</h4>
+            <a href="https://a-mccaffrey.github.io/gabriels-weather-dashboard/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Gabriel's Weather Dashboard</a>
+            <a href="https://a-mccaffrey.github.io/aplus-foodies/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Recipe Generator</a>
+            <hr/>
+            <h4>JavaScript</h4>
+            <a href="https://a-mccaffrey.github.io/homework-5/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Work Day Scheduler </a>
+            <a href="https://a-mccaffrey.github.io/gabriels-weather-dashboard/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Gabriel's Weather Dashboard</a>
+            <a href="https://a-mccaffrey.github.io/aplus-foodies/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Recipe Generator</a>
+            <hr/>
+            <h4>HTML and CSS</h4>
+            <a href="https://pivotree.com/platforms/coveo-for-commerce/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Coveo for Commerce Webpage</a>
+              <a href="https://pivotree.com/our-clients/tgi-fridays-sap-commerce-marketing-and-customer-data/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Case Study Page</a>
+              <a href="https://pivotree.com/social-distancing-commerce-enablement-solutions/buy-online-pickup-in-store-bopis-with-curbside-pickup-by-pivotree/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Buy Online Pickup in Store Solution Page</a>
+              <a href="https://pivotree.com/about-us/newsroom/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Newsroom</a>
+              <a href="https://a-mccaffrey.github.io/gabriels-weather-dashboard/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Gabriel's Weather Dashboard</a>
+            <a href="https://a-mccaffrey.github.io/aplus-foodies/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Recipe Generator</a>
+            <hr/>
+            <h4>MySQL/Server-side Development</h4>
+            <a href="https://boiling-tundra-84919.herokuapp.com/" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Note Taker Using Express.js</a>
+            <hr/>
+            <h4>Command Line Applications</h4>
+            <a href="https://github.com/a-mccaffrey/readme-generator" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Readme Generator (Node.js)</a>
+            <a href="https://github.com/a-mccaffrey/template-engine-employee-summary" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">Template Engine - Employee Summary (fs)</a>
+            <a href="https://github.com/a-mccaffrey/MySQL-Employee-Tracker" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">MySQL Employee Tracker</a>
+            <hr/>
+            <h4>MySQL</h4>
+            <a href="https://github.com/a-mccaffrey/MySQL-Employee-Tracker" target="_blank" class="d-block m-3" rel="noreferrer noopener" aria-label="This is an external link (opens in a new tab)">MySQL Employee Tracker</a>
+            </div>
+            <div class="modal-footer text-center">
+              <button
+                type="button"
+                class="btn btn-secondary mybuttons"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </main>
-    <!-- Footer -->
-    <footer class="mt-auto bg-footer">
-      Hello! I am a footer.
-    </footer>
+      <!-- Video Animation Modal -->
+      <div
+        class="modal fade"
+        id="videoAnimationModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Video Editing and Animation Work (Click Image to View Video)</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+            <!-- BOPIS -->
+          <div class="row"><a href="https://www.youtube.com/watch?v=jiNJdm0EKhU" 
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="This is an external link (opens in a new tab)">
+            <img src="./assets/Video Screenshots/BOPIS.png" alt="A screenshot of a video introducing the new Pivotree solution - Buy Online, Pickup in Store (BOPIS)" width="50%" class="video-example"/>
+          </a>
+        </div>
+            <!-- Pivotree Brand Video -->
+              <div class="row"><a href="https://www.facebook.com/Pivotree/videos/383657125564816/" 
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="This is an external link (opens in a new tab)">
+              <img src="./assets/Video Screenshots/Pivotree_intro_video.png" alt="A screenshot of a video introducing the new Pivotree brand" width="50%" class="video-example"/>
+            </a>
+          </div>
+          <!-- Mountain Climbing -->
+          <div class="row"><a href="https://www.facebook.com/thinkwrap/videos/2271628113116045/" 
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="This is an external link (opens in a new tab)">
+            <img src="./assets/Video Screenshots/Mountain Climbing.png" alt="A screenshot of a video about Black Frida eCommerce needs" width="50%" class="video-example"/>
+          </a>
+        </div>
+          <!-- 10 Thousand Interships -->
+          <div class="row"><a href="https://www.facebook.com/RajLiberal/videos/1364186730358105/" 
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="This is an external link (opens in a new tab)">
+            <img src="./assets/Video Screenshots/10ThousandInternships.png" alt="A screenshot of a video introducing the 10 Thousand Interships program" width="50%" class="video-example"/>
+          </a>
+        </div>
+        <!-- Spousal Sponsorship -->
+        <div class="row"><a href="https://www.facebook.com/RajLiberal/videos/1423659797744131/" 
+          target="_blank"
+          rel="noreferrer noopener"
+          aria-label="This is an external link (opens in a new tab)">
+          <img src="./assets/Video Screenshots/SpousalSponsorship.png" alt="A screenshot of a video introducing the improvements to the Canadian Spousal Sponsorship program" width="50%" class="video-example"/>
+        </a>
+      </div>
+      <!-- International Decade -->
+      <div class="row"><a href="https://www.facebook.com/RajLiberal/videos/1436337596476351/" 
+        target="_blank"
+        rel="noreferrer noopener"
+        aria-label="This is an external link (opens in a new tab)">
+        <img src="./assets/Video Screenshots/InternationalDecade.png" alt="A screenshot of a video discussing Canada's recognition of the International Decade for People of African Descent " width="50%" class="video-example"/>
+      </a>
+    </div>
+    <!-- Budget 2018 -->
+    <div class="row"><a href="https://www.facebook.com/RajLiberal/videos/1435403736569737/" 
+      target="_blank"
+      rel="noreferrer noopener"
+      aria-label="This is an external link (opens in a new tab)">
+      <img src="./assets/Video Screenshots/Canada2018Budget.png" alt="A screenshot of a video discussing Canada's 2018 budget" width="50%" class="video-example"/>
+    </a>
+  </div>
+          </div>
+            <div class="modal-footer text-center">
+              <button
+                type="button"
+                class="btn btn-secondary mybuttons"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script>
-      $(function() {
-        $(`[data-tooltip]`).tooltip();
-      });
-    </script>
+      <!-- End Content -->
+    </div>
+  </div>
   </body>
 </html>

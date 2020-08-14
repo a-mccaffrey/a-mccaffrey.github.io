@@ -1,0 +1,264 @@
+/* Importing fonts from Google */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap");
+
+/* Setting the base font for any and all elements I choose to use (I may substitute futura for special cases) */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+a:hover {
+  color: #cd94bb;
+}
+a,
+u:hover {
+  color: #cd94bb;
+}
+a {
+  color: #ffaaaa
+}
+/*Styling for the Audio name help*/
+#audio {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+/* Setting the background image */
+body {
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+/* Setting the margin for all buttons */
+
+.btn {
+  margin: 15px 0 15px 0;
+}
+.btn-primary {
+  background-color: #ffaaaa;
+  border-color: #ffffff;
+  border-radius: 999px;
+}
+.btn-primary:hover {
+  background-color: #cd94bb;
+  border-color: #ffffff;
+}
+.btn-primary:focus {
+  background-color: #ffaaaa;
+  border-color: #3a5360;
+  border-width: 1px;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+.btn-primary:active {
+  background-color: #ffaaaa;
+  border-color: #ffffff;
+}
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #3a5360;
+  background-color: #ffffff;
+  border-color: #ffaaaa;
+}
+/* Styling the navigation bar */
+.fa-feather-alt {
+  color: #002eff;
+}
+.navbar-brand {
+  padding: 20px;
+  overflow: visible;
+  margin-right: 20px;
+  background-color: transparent;
+  border-width: 2px;
+  border-right: ;
+}
+.navbar-dark .navbar-brand:hover {
+  background-color: rgba(0, 46, 255, 0.2);
+}
+.navbar-brand h1 {
+  color: #002eff;
+  font-size: 20px;
+  font-family: "Futura", sans-serif;
+}
+.bg-dark {
+  background: rgb(255, 170, 170);
+  background: -moz-linear-gradient(
+    9deg,
+    rgba(255, 170, 170, 1) 35%,
+    rgba(0, 46, 255, 1) 100%,
+    rgba(0, 46, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    9deg,
+    rgba(255, 170, 170, 1) 35%,
+    rgba(0, 46, 255, 1) 100%,
+    rgba(0, 46, 255, 1) 100%
+  );
+  background: linear-gradient(
+    9deg,
+    rgba(255, 170, 170, 1) 35%,
+    rgba(0, 46, 255, 1) 100%,
+    rgba(0, 46, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffaaaa",endColorstr="#002eff",GradientType=1);
+}
+.navbar {
+  padding: 0px 0px 0px 2em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: white;
+}
+button.navbar-toggler {
+  color: rgba(255, 255, 255);
+  border-color: rgba(255, 255, 255);
+  margin-right: 42px;
+  border-radius: 8px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffaaaa;
+}
+.active a {
+  font-weight: 600;
+  text-decoration: underline !important;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #ffffff;
+}
+.nav-link {
+  font-family: "Nunito Sans", sans-serif;
+  margin-left: 20px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-color: white;
+}
+.ml-auto {
+  margin-right: 42px;
+}
+
+/* Styling for the standard card */
+.container {
+  float: left;
+}
+.card {
+  background-color: rgba(0, 46, 255, 0.7);
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  margin: 42px;
+}
+.card h2 {
+  font-family: "Futura", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+hr {
+  background-color: white;
+}
+.card-text {
+  margin: 0, 0, 20px, 0;
+  padding: 0;
+  color: #ffffff;
+}
+#bio-image {
+  position: relative;
+  float: left;
+  border-radius: 47% 53% 70% 30% / 30% 30% 70% 70%;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #bio-image {
+    position: relative;
+    float: left;
+    border-radius: 47% 53% 70% 30% / 30% 30% 70% 70%;
+    width: 30%;
+  }
+}
+
+/* Styling for the contact me form */
+.text-muted {
+  color: #ffaaaa !important;
+}
+label {
+  color: white;
+}
+.form-control:focus {
+  border-color: #ffaaaa;
+  border-width: 2px;
+}
+
+/* Styling for the Portfolio images */
+.image-holder {
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+  margin: 10px 0 10px 0;
+}
+.image-holder img {
+  width: 100%;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
+.image-holder .image-text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 10px; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  width: 100%; /* Set the width of the positioned div */
+  background: #4651eb;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+}
+.image-text h3 {
+  font-size: 20px;
+  padding: 5px 0px 0px 0px;
+  color: white;
+}
+
+/* Styling the footer */
+
+footer {
+  height: auto;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-top-width: 1px;
+  padding: 20px;
+}
+.bg-footer {
+  background: rgb(70, 81, 235);
+  background: -moz-linear-gradient(
+    23deg,
+    rgba(70, 81, 235, 1) 0%,
+    rgba(255, 170, 170, 1) 76%
+  );
+  background: -webkit-linear-gradient(
+    23deg,
+    rgba(70, 81, 235, 1) 0%,
+    rgba(255, 170, 170, 1) 76%
+  );
+  background: linear-gradient(
+    23deg,
+    rgba(70, 81, 235, 1) 0%,
+    rgba(255, 170, 170, 1) 76%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4651eb",endColorstr="#ffaaaa",GradientType=1);
+}
+/* Styling the portfolio page */
+.github {
+  text-align: center;
+}
