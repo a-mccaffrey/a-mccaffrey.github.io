@@ -30,6 +30,9 @@
     ></script>
     <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 
+    <!-- Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CSS only -->
     <link
       rel="stylesheet"
@@ -106,7 +109,7 @@
 
     <!-- Main content starts -->
     <header class="hero">
-      <div class="hero-text">
+      <div class="hero-text" data-aos="fade-up" data-aos-duration="6000">
         <h1 class="display-4 text-center">Hello, Moien!</h1>
         <p class="lead text-center">
           My name is Aisling McCaffrey
@@ -725,5 +728,14 @@ aria-hidden="true"
       <!-- End Content -->
     </div>
   </div>
-  </body>
+
+<!-- Invoke animate on Scroll -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  $(function() {
+       AOS.init();
+       window.addEventListener('load', AOS.refresh)
+  });
+</script>
+</body>
 </html>

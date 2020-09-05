@@ -496,3 +496,7 @@ top: 113vh;
   background-color: #f8acab;
   margin: 300px 15px 0 15px;
 }
+/* Animate on Scroll fixes */
+.aos-container {
+  overflow-x: hidden
+}
