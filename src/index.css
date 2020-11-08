@@ -1,0 +1,68 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300;1,500&display=swap");
+
+/* Setting base attributes for the whole page */
+body,
+html {
+  height: 100%;
+  font-family: "futura" !important;
+  background-color: #ffffff !important;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+h2 {
+  font-size: 45px;
+}
+.page-container .home {
+  min-height: 60vh;
+}
+.page-container .about {
+  min-height: 70vh;
+}
+.page-container .portfolio {
+  min-height: 70vh;
+}
+.page-container .contact {
+  min-height: 80vh;
+}
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+ @media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+/* Link Effects */
+a {
+  color: #ed1b57 !important;
+  text-decoration: none !important;
+  }
+a:hover {
+    color: #f15722 !important;
+    text-decoration: none !important;
+  }
+li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+/* new parallax stuff */
+body {
+  /* margin: 0; */
+  /* padding: 0; */
+  perspective: 1px;
+  /* transform-style: preserve-3d; */
+  /* height: 100%; */
+  overflow-y: scroll;
+  /* overflow-x: hidden; */
+}
+/* #subcontent {
+  background-color: #f8acab;
+  margin: 300px 15px 0 15px;
+} */

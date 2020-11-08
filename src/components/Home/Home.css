@@ -1,0 +1,52 @@
+h1 {
+  font-size: 70px !important;
+  font-family: "futura";
+}
+.content-container {
+  max-height: 100vh;
+  margin-top: 10%;
+}
+.hero,
+.hero:before {
+  background: 50% 50% / cover;
+}
+.hero:before {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 50px;
+  display: block;
+  background-image: url(../../assets/Garden.png);
+  opacity: 0.45;
+  background-size: cover;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+  height: 100vh;
+}
+a.iconography {
+  color: #ed1b57;
+  text-decoration: none !important;
+}
+a.iconography:hover {
+  color: #f15722;
+}
+a.iconography:focus {
+  color: #f8acab;
+}
+.pronunciation-button {
+  color: #ed1b57;
+  text-decoration: none !important;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+}
+.pronunciation-button:hover {
+  color: #f15722;
+}
+.pronunciation-button:focus {
+  outline: none;
+  color: #f8acab;
+}

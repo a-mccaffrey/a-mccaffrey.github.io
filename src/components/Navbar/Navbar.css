@@ -1,0 +1,55 @@
+/* styling the navbar */
+.navbar {
+  border-bottom-style: solid;
+  border-color: #0a1212;
+  padding: 0 15px 0 15px;
+  font-family: "futura";
+  background-color: #ffffff;
+  height: 83px;
+  overflow: visible;
+}
+.navbar h3 {
+  font-size: 24px;
+  color: #0a1212;
+}
+img.logo {
+  height: 50px;
+  display: inline;
+}
+.home-button {
+  position: absolute;
+  top: 20px;
+}
+.home-button:hover {
+  color: #ed1b57;
+}
+.nav-link {
+  position: relative;
+}
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #0a1212;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+/* Mobile Responsive Styling */
+@media only screen and (max-width: 767px) {
+  #responsive-navbar-nav {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 32px;
+    background-color: #fff;
+    border-style: solid;
+    text-align: center;
+  }
+}
