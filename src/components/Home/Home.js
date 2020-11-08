@@ -26,7 +26,7 @@ class Home extends Component {
           <div style={styles.fadeInLeft} className="hero-text">
             <h1 className="display-4 text-center">Hello, Moien!</h1>
             <p className="lead text-center">
-              My name is Aisling McCaffrey
+              My name is Aisling McCaffrey{" "}
               <button
                 onClick={this.playAudio}
                 className="pronunciation-button p-1"

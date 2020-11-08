@@ -6,7 +6,7 @@ class Footer extends Component {
     const today = new Date();
     return (
       <div className="footer-background">
-        <footer className="footer mt-auto py-3">
+        <footer className="footer mt-auto py-3 px-4">
             <h5>
               "If you work really hard and you're kind, amazing things will
               happen"

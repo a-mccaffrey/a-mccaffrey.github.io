@@ -28,11 +28,10 @@ class Contact extends Component {
           <Container className="contact-container">
             <Row>
               {/* Left Side Starts Here */}
-              <Col md={6} className="help-container text-center">
+              <Col md={6} className="help-container text-center mx-4">
                 <h2>How can I help you?</h2>
                 <h4>
-                  I'm happy to help you on a contract, freelance, and full-time
-                  basis in the following areas:
+                  I'm happy to help the right companies and individuals in the following areas:
                 </h4>
                 <Row>
                   <Col className="icon-container">
@@ -40,7 +39,7 @@ class Contact extends Component {
                       src={ Development }
                       alt=""
                       className="my-icons"
-                      style={{ width: "75px" }}
+                      style={{ width: "70px" }}
                     />
                     <p>Front-End Web Development</p>
                   </Col>
@@ -48,7 +47,7 @@ class Contact extends Component {
                     <img
                       src={ UX }
                       alt=""
-                      style={{ width: "75px" }}
+                      style={{ width: "70px" }}
                       className="my-icons"
                     />
                     <p>UX Design</p>
@@ -57,7 +56,7 @@ class Contact extends Component {
                     <img
                       src={ Graphic }
                       alt=""
-                      style={{ width: "75px" }}
+                      style={{ width: "70px" }}
                       className="my-icons"
                     />
                     <p>Graphic Design</p>
@@ -68,7 +67,7 @@ class Contact extends Component {
                     <img
                       src={ Video }
                       alt=""
-                      style={{ width: "75px" }}
+                      style={{ width: "70px" }}
                       className="my-icons"
                     />
                     <p>Video Editing and Animation</p>
@@ -77,7 +76,7 @@ class Contact extends Component {
                     <img
                       src={ Writing }
                       alt=""
-                      style={{ width: "75px" }}
+                      style={{ width: "70px" }}
                       className="my-icons"
                     />
                     <p>Writing</p>
@@ -86,7 +85,7 @@ class Contact extends Component {
                     <img
                       src={ Consulting }
                       alt=""
-                      style={{ width: "75px" }}
+                      style={{ width: "70px" }}
                       className="my-icons"
                     />
                     <p>Consulting</p>
@@ -109,7 +108,7 @@ class Contact extends Component {
                 </Row>
               </Col>
               {/* Left Side ends here, right side begins */}
-              <Col md={6}>
+              <Col md={5}>
                 <Form
                   className="mt-0"
                   action="https://formspree.io/mgenroaz"
@@ -150,11 +149,6 @@ class Contact extends Component {
                       {" "}
                       Click Here
                     </a>
-                  </p>
-                  <p className="contact-form">
-                    <i className="fas fa-map-marker-alt"></i>
-                    <strong> Where I'd really like to work |</strong> Remotely
-                    or in Luxembourg City
                   </p>
                   <p className="contact-form">
                     <i className="fas fa-phone"></i>
