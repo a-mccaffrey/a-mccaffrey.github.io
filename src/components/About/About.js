@@ -47,10 +47,10 @@ class About extends Component {
                       experience in marketing, graphic design, and coding to
                       create great web experiences. My knowledge of marketing,
                       web development, and client-centricity will be a great
-                      asset to any team. I am immigrating to Luxembourg before
-                      the end of 2020, and I'm looking for my next career
-                      opportunity. As a citizen of Ireland, I am legally allowed
-                      to work in Luxembourg, where I intend to settle with my
+                      asset to a web development team. I am immigrating to
+                      Luxembourg before the end of 2020, and I'm looking to do
+                      more coding! As a citizen of Ireland, I am legally allowed
+                      to reside in Luxembourg, where I intend to settle with my
                       Luxembourgish partner.
                     </p>
                     <p className="card-text">
