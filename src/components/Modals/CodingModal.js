@@ -74,8 +74,7 @@ class CodingModal extends Component {
                 <img
                   src={AplusFoodies}
                   alt="A screenshot of recipe generator application"
-                  width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
                 <h5 className="pb-4">Recipe Generator Deployed Application</h5>
               </a>
@@ -99,8 +98,7 @@ class CodingModal extends Component {
                 <img
                   src={Appointify}
                   alt="A screenshot of an application with the headline: An open source project for booking doctor's appointments"
-                  width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
                 <h5 className="pb-4">Appointify</h5>
               </a>
@@ -126,8 +124,7 @@ class CodingModal extends Component {
                 <img
                   src={WeatherDashboard}
                   alt="A screenshot of a weather dashboard. The navbar is the colours of the Irish flag - green, white, and orange."
-                  width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
                 <h5 className="pb-4">Gabriel's Weather Dashboard</h5>
               </a>
@@ -151,8 +148,7 @@ class CodingModal extends Component {
                 <img
                   src={WorkScheduler}
                   alt="A screenshot of a work day scheduler - a simple calendar app for scheduling your workday."
-                  width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
                 <h5 className="pb-4">Workday Scheduler</h5>
               </a>
@@ -176,8 +172,7 @@ class CodingModal extends Component {
                 <img
                   src={NoteTaker}
                   alt="A screenshot of a note taker application."
-                  width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
                 <h5 className="pb-4">JSON Note Taker</h5>
               </a>
@@ -201,8 +196,7 @@ class CodingModal extends Component {
                 <img
                   src={CLIReadme}
                   alt="A screenshot of a command line application that generates a useable readme."
-                  width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
                 <h5>
                   Readme Generator - Command Line Application (GitHub repo only)
@@ -218,8 +212,7 @@ class CodingModal extends Component {
                 <img
                   src={EmployeeTracker}
                   alt="A screenshot of an employee summary template generated through a command line application."
-                  width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
                 <h5>
                   Employee Summary Template Engine - Command Line Application
@@ -236,8 +229,7 @@ class CodingModal extends Component {
                 <img
                   src={EmployeeManager}
                   alt="A screenshot of a command line application that helps track employees within an organization."
-                  width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
                 <h5 className="pb-4">
                   MySQL Employee Tracker - Command Line Application (GitHub repo

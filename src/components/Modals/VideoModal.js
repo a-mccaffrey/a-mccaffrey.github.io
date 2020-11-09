@@ -48,7 +48,7 @@ class VideoModal extends Component {
                   src={ BOPIS }
                   alt="A screenshot of a video introducing the new Pivotree solution - Buy Online, Pickup in Store (BOPIS)"
                   width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
               </a>
             </div>
@@ -64,7 +64,7 @@ class VideoModal extends Component {
                   src={ IntroVid }
                   alt="A screenshot of a video introducing the new Pivotree brand"
                   width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
               </a>
             </div>
@@ -80,7 +80,7 @@ class VideoModal extends Component {
                   src={ MountainClimbing }
                   alt="A screenshot of a video about Black Frida eCommerce needs"
                   width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
               </a>
             </div>
@@ -96,7 +96,7 @@ class VideoModal extends Component {
                   src={ Internships }
                   alt="A screenshot of a video introducing the 10 Thousand Interships program"
                   width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
               </a>
             </div>
@@ -112,7 +112,7 @@ class VideoModal extends Component {
                   src={ SpousalSponsorship }
                   alt="A screenshot of a video introducing the improvements to the Canadian Spousal Sponsorship program"
                   width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
               </a>
             </div>
@@ -128,7 +128,7 @@ class VideoModal extends Component {
                   src={ InternationalDecade }
                   alt="A screenshot of a video discussing Canada's recognition of the International Decade for People of African Descent "
                   width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
               </a>
             </div>
@@ -144,7 +144,7 @@ class VideoModal extends Component {
                   src={ BOPIS }
                   alt="A screenshot of a video discussing Canada's 2018 budget"
                   width="50%"
-                  className="video-example"
+                  className="portfolio-example"
                 />
               </a>
             </div>

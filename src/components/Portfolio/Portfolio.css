@@ -20,7 +20,7 @@ body.modal-open {
   padding-right: 30px;
   border-radius: 0px;
 }
-.video-example {
+.portfolio-example {
   box-shadow: 0px 12px 39px -19px rgba(0, 0, 0, 0.75);
   border: 2px solid #0a1212;
   margin: 50px;
@@ -30,7 +30,14 @@ body.modal-open {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
-.video-example:hover {
+@media (max-width: 991.98px){
+  .portfolio-example {
+    width: 80%;
+    margin: 20px 0;
+  }
+}
+
+.portfolio-example:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
