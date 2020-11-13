@@ -13,7 +13,7 @@ import "./index.css";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <MyNavbar />
         <div className="page-container">
         <Switch>

@@ -53,3 +53,9 @@ img.logo {
     text-align: center;
   }
 }
+.navbar-light .navbar-toggler {
+  color: #f8acab !important;
+  border-color: #0a1212 !important;
+  border-width: 2px;
+  border-radius: 0;
+}

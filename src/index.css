@@ -9,6 +9,7 @@ html {
   background-color: #ffffff !important;
   overflow: hidden;
   scroll-behavior: smooth;
+  bottom: 0;
 }
 
 p {
@@ -21,6 +22,10 @@ h2 {
 .page-container .home {
   min-height: 60vh;
 }
+/* @media (max-width: 767.98px) { 
+  .page-container .home {
+    min-height: 100vh;
+  } } */
 .page-container .about {
   min-height: 70vh;
 }
@@ -59,10 +64,7 @@ body {
   perspective: 1px;
   /* transform-style: preserve-3d; */
   /* height: 100%; */
-  overflow-y: scroll;
+  overflow-y: auto;
   /* overflow-x: hidden; */
+  min-height: 100%;
 }
-/* #subcontent {
-  background-color: #f8acab;
-  margin: 300px 15px 0 15px;
-} */

@@ -1,19 +1,22 @@
 
 .footer {
-  height: auto;
+  /* height: auto; */
   text-align: center;
   font-family: futura;
   text-shadow: none;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0), #f8acab) !important;
+  background-image: linear-gradient(to bottom, rgba(248,172,171,0), #f8acab) !important;
 }
+
+
 .footer-background {
-  position: relative;
+  /* position: relative; */
   z-index: 1;
   background-image: url(../../assets/Branding/faded-pink-divider.svg);
   background-repeat: no-repeat;
   background-size: 110%;
   padding-top: 130px;
   margin: 0 -20px 0 -20px;
+  padding-bottom: 0;
 }
 .social-media {
   font-size: 30px;
