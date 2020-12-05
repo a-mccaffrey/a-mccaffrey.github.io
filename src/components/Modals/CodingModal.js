@@ -9,6 +9,7 @@ import EmployeeTracker from "../../assets/Coding Screenshots/employee-tracker.pn
 import NoteTaker from "../../assets/Coding Screenshots/note-taker.png";
 import WeatherDashboard from "../../assets/Coding Screenshots/Weather-Dashboard.png";
 import WorkScheduler from "../../assets/Coding Screenshots/Work-Scheduler.png";
+import MERNCO2 from "../../assets/Coding Screenshots/MERNCO2.png";
 
 class CodingModal extends Component {
   state = {
@@ -19,26 +20,6 @@ class CodingModal extends Component {
   closeModal = () => this.setState({ isOpen: false });
 
   render() {
-    // const data = [
-    //   {
-    //     title: "Recipe Generator Deployed Application",
-    //     link: "https://a-mccaffrey.github.io/aplus-foodies/",
-    //     image: "./assets/Coding Screenshots/recipe-generator.png",
-    //     alt: "A screenshot of recipe generator application",
-    //   },
-    //   {
-    //     name: "Vuejs",
-    //     url: "https://vuejs.org",
-    //     description: "The Progressive JavaScript Framework",
-    //   },
-    //   {
-    //     name: "Emberjs",
-    //     url: "https://www.emberjs.com",
-    //     description:
-    //       "Ember.js is an open-source JavaScript web framework, based on the Model–view–viewmodel pattern",
-    //   },
-    // ];
-
     return (
       <div>
         <div className="d-flex align-items-center justify-content-center">
@@ -56,17 +37,47 @@ class CodingModal extends Component {
           </Modal.Header>
           <Modal.Body className="text-center">
             <p className="my-5">
-              My entire portfolio (including graphics) was created from scratch
-              using GitHub, Bootstrap, React, Illustrator, and Photoshop. I hope
-              you enjoy it.
+              The entirety of aislingmccaffrey.com (including graphics) was
+              created from scratch using GitHub, Bootstrap, React, Cloudflare,
+              Illustrator, and Photoshop. The below coding projects feature code
+              on GitHub, and may be in the form of deployed applications on
+              Netlify or Heroku, as well as CLI applications you can download to
+              your own computer and use for your own purposes. All links open in
+              new tabs.
             </p>
             <h4>Featured Projects</h4>
-            {/* <!-- Recipe Generator --> */}
+            {/* <!-- MERN CO2 App --> */}
             {/* Destructuring will be a problem for future me - I am aware this is not as dry as it should be */}
             {/* {data.map(({ title, link, image, id }) => ( */}
             <div>
               <a
-                href="https://a-mccaffrey.github.io/aplus-foodies/"
+                href="https://www.co2tracker.xyz/"
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label="This is an external link (opens in a new tab)"
+              >
+                <img
+                  src={MERNCO2}
+                  alt="A screenshot of a full-stack MERN application which measures the CO2 in your air"
+                  className="portfolio-example"
+                />
+                <h5 className="pb-4">
+                  MERN CO₂ Tracker (Deployed Application)
+                </h5>
+              </a>
+              <p>
+                <a
+                  href="https://github.com/DiLiubarets/MERN_CO2"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="This is an external link (opens in a new tab)"
+                >
+                  Click here for GitHub repository
+                </a>
+              </p>
+              {/* <!-- Recipe Generator App --> */}
+              <a
+                href="https://aplus-foodies.netlify.app/"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="This is an external link (opens in a new tab)"
@@ -76,7 +87,9 @@ class CodingModal extends Component {
                   alt="A screenshot of recipe generator application"
                   className="portfolio-example"
                 />
-                <h5 className="pb-4">Recipe Generator Deployed Application</h5>
+                <h5 className="pb-4">
+                  Recipe Generator (Deployed Application)
+                </h5>
               </a>
               <p>
                 <a
@@ -100,7 +113,7 @@ class CodingModal extends Component {
                   alt="A screenshot of an application with the headline: An open source project for booking doctor's appointments"
                   className="portfolio-example"
                 />
-                <h5 className="pb-4">Appointify</h5>
+                <h5 className="pb-4">Appointify (Deployed Application)</h5>
               </a>
               <p className="pb-4">
                 <a
@@ -116,7 +129,7 @@ class CodingModal extends Component {
               <h4 className="pt-4">Additional GitHub projects</h4>
               {/* <!-- Weather Dashboard --> */}
               <a
-                href="https://a-mccaffrey.github.io/gabriels-weather-dashboard/"
+                href="https://gabriels-weather-dashboard.netlify.app/"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="This is an external link (opens in a new tab)"
@@ -126,7 +139,9 @@ class CodingModal extends Component {
                   alt="A screenshot of a weather dashboard. The navbar is the colours of the Irish flag - green, white, and orange."
                   className="portfolio-example"
                 />
-                <h5 className="pb-4">Gabriel's Weather Dashboard</h5>
+                <h5 className="pb-4">
+                  Gabriel's Weather Dashboard (Deployed Application)
+                </h5>
               </a>
               <p>
                 <a
@@ -140,7 +155,7 @@ class CodingModal extends Component {
               </p>
               {/* <!-- Work Day Scheduler --> */}
               <a
-                href="https://a-mccaffrey.github.io/workday-scheduler/"
+                href="https://workday-scheduler.netlify.app/"
                 target="_blank"
                 rel="noreferrer noopener"
                 aria-label="This is an external link (opens in a new tab)"
@@ -150,7 +165,9 @@ class CodingModal extends Component {
                   alt="A screenshot of a work day scheduler - a simple calendar app for scheduling your workday."
                   className="portfolio-example"
                 />
-                <h5 className="pb-4">Workday Scheduler</h5>
+                <h5 className="pb-4">
+                  Workday Scheduler (Deployed Application)
+                </h5>
               </a>
               <p>
                 <a
@@ -174,7 +191,7 @@ class CodingModal extends Component {
                   alt="A screenshot of a note taker application."
                   className="portfolio-example"
                 />
-                <h5 className="pb-4">JSON Note Taker</h5>
+                <h5 className="pb-4">JSON Note Taker (Deployed Application)</h5>
               </a>
               <p>
                 <a

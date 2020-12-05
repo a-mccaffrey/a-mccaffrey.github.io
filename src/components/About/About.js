@@ -36,7 +36,7 @@ class About extends Component {
                     <h2 className="card-title">About Me</h2>
                     <p className="card-text">
                       I am a B2B marketer with a bachelor degree in
-                      International Business and I am close to finishing a
+                      International Business and I have recently received a
                       full-stack web development certificate from Carleton
                       University. I have been running WordPress sites for my
                       entire career, and I got my coding start when I was 12 in
@@ -47,11 +47,9 @@ class About extends Component {
                       experience in marketing, graphic design, and coding to
                       create great web experiences. My knowledge of marketing,
                       web development, and client-centricity will be a great
-                      asset to a web development team. I am immigrating to
-                      Luxembourg before the end of 2020, and I'm looking to do
-                      more coding! As a citizen of Ireland, I am legally allowed
-                      to reside in Luxembourg, where I intend to settle with my
-                      Luxembourgish partner.
+                      asset to a web development team. I now live in Luxembourg
+                      permanently, and I'm looking to do more coding! Please get
+                      in touch if you think we could collaborate.
                     </p>
                     <p className="card-text">
                       If you want to learn more about my education, background,

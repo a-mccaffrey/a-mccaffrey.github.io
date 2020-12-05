@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
@@ -6,14 +6,17 @@ import Container from "react-bootstrap/Container";
 import "./Navbar.css";
 import NavIcon from "../../assets/Branding/flower-icon.svg";
 
-class MyNavbar extends Component {
-  render() {
+const MyNavbar = () => {
+
+    const [expanded, setExpanded] = useState(false);
+
     return (
       <div>
         <Navbar
           collapseOnSelect
-          expand="lg"
-          className="navbar-expand-md sticky-top"
+          expand="md"
+          className="sticky-top"
+          expanded={expanded}
         >
           <Container>
             <Navbar.Brand href="/">
@@ -27,7 +30,7 @@ class MyNavbar extends Component {
               </h3>
             </Navbar.Brand>
             {/* to here is good */}
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" id="nav-button" onClick={() => setExpanded(expanded ? false : "expanded")}/>
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="navbar-nav ml-auto flex-nowrap">
                 <NavLink
@@ -35,16 +38,17 @@ class MyNavbar extends Component {
                   to="/"
                   activeClassName="active"
                   className="nav-item"
+                  onClick={() => setExpanded(false)}
                 >
                   <span className="nav-link">Home</span>
                 </NavLink>
-                <NavLink to="/about" activeClassName="active">
+                <NavLink to="/about" activeClassName="active" onClick={() => setExpanded(false)}>
                   <span className="nav-link">About</span>
                 </NavLink>
-                <NavLink to="/portfolio" activeClassName="active">
+                <NavLink to="/portfolio" activeClassName="active" onClick={() => setExpanded(false)}>
                   <span className="nav-link">Portfolio</span>
                 </NavLink>
-                <NavLink to="/contact" activeClassName="active">
+                <NavLink to="/contact" activeClassName="active" onClick={() => setExpanded(false)}>
                   <span className="nav-link">Get in Touch</span>
                 </NavLink>
               </Nav>
@@ -53,7 +57,6 @@ class MyNavbar extends Component {
         </Navbar>
       </div>
     );
-  }
 }
 
 export default MyNavbar;

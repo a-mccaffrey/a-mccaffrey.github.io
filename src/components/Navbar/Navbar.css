@@ -5,7 +5,6 @@
   padding: 0 15px 0 15px;
   font-family: "futura";
   background-color: #ffffff;
-  height: 83px;
   overflow: visible;
 }
 .navbar h3 {
@@ -25,6 +24,7 @@ img.logo {
 }
 .nav-link {
   position: relative;
+  margin: 15px 10px 15px 10px;
 }
 .nav-link:after {
   background: none repeat scroll 0 0 transparent;
@@ -47,9 +47,8 @@ img.logo {
   #responsive-navbar-nav {
     padding-right: 0;
     padding-left: 0;
-    margin-top: 32px;
+    margin-top: 15px;
     background-color: #fff;
-    border-style: solid;
     text-align: center;
   }
 }
@@ -58,4 +57,11 @@ img.logo {
   border-color: #0a1212 !important;
   border-width: 2px;
   border-radius: 0;
+}
+button.navbar-toggler:focus {
+  border-color: #f8acab !important;
+  outline: #f8acab !important;
+}
+.navbar-toggler {
+  margin: 10px;
 }
