@@ -24,7 +24,7 @@ img.logo {
 }
 .nav-link {
   position: relative;
-  margin: 15px 10px 15px 10px;
+  margin: 15px 10px 15px 10px !important;
 }
 .nav-link:after {
   background: none repeat scroll 0 0 transparent;
