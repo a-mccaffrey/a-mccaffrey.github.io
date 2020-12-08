@@ -16,6 +16,11 @@ img.logo {
   display: inline;
   padding-bottom: 5px !important;
 }
+@media only screen and (max-width: 767px) {
+  img.logo  {
+    padding-bottom: 15px !important;
+  }
+}
 .home-button {
   position: absolute;
   top: 20px;
