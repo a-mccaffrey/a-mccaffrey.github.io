@@ -18,7 +18,7 @@ img.logo {
 }
 @media only screen and (max-width: 767px) {
   img.logo  {
-    padding-bottom: 15px !important;
+    padding-bottom: 25px !important;
   }
 }
 .home-button {
