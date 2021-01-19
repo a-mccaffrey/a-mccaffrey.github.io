@@ -26,6 +26,17 @@ class WritingModal extends Component {
             <Modal.Title>Writing Examples</Modal.Title>
           </Modal.Header>
           <Modal.Body className="text-center">
+          <h4>Medium.com</h4>
+            <a
+              href="https://aislingmccaffrey.medium.com/my-first-shopify-feature-request-a-quote-with-the-built-in-shopify-form-fafac6d5dc9f"
+              target="_blank"
+              className="d-block m-3"
+              rel="noreferrer noopener"
+              aria-label="This is an external link (opens in a new tab)"
+            >
+              My First Shopify Feature — “Request a Quote” with the built-in Shopify form
+            </a>
+            <hr />
             <h4>Webpages</h4>
             <a
               href="https://pivotree.com/social-distancing-commerce-enablement-solutions/buy-online-pickup-in-store-bopis-with-curbside-pickup-by-pivotree/"
